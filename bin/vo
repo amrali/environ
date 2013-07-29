@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Open multiple files in a vertical split
+vim -O $@
+
