@@ -1,0 +1,21 @@
+[user]
+	name = Amr Ali
+
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	shs = stash save
+	shp = stash pop
+	shl = stash list
+	df = diff --patience --color
+	dfs = diff --patience --color --staged
+	ll = log --stat --abbrev-commit --color
+	lol = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset'
+	adp = add -p
+
+[color]
+	ui = auto # covers diff = true, status = auto, branch = auto
+	interactive = auto
+
