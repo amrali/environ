@@ -19,3 +19,5 @@
 	ui = auto # covers diff = true, status = auto, branch = auto
 	interactive = auto
 
+[push]
+	default = matching
