@@ -3,6 +3,9 @@
 alias li='ls -liah'
 alias la='ls -AF'
 alias l='ls -F'
+alias eo='exo-open'
+alias vo='vim -O'
+alias sel='xsel -bi'
 
 # My prompt
 GIT_PS1_SHOWDIRTYSTATE=1
