@@ -4,3 +4,9 @@
 [submodule "userdots/.vim/bundle/vim-pathogen"]
 	path = userdots/.vim/bundle/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen.git
+[submodule "userdots/.vim/bundle/vim-colors-solarized"]
+	path = userdots/.vim/bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "userdots/.vim/bundle/vim-statline"]
+	path = userdots/.vim/bundle/vim-statline
+	url = https://github.com/millermedeiros/vim-statline.git
