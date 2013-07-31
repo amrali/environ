@@ -1,25 +1,26 @@
 [user]
-	name = Amr Ali
+    name = Amr Ali
 
 [alias]
-	st = status
-	ci = commit
-	br = branch
-	co = checkout
-	shs = stash save
-	shp = stash pop
-	shl = stash list
-	df = diff --patience --color
-	dfs = diff --patience --color --staged
-	ll = log --stat --abbrev-commit --color
-	lol = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset'
-	adp = add -p
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    shs = stash save
+    shp = stash pop
+    shl = stash list
+    df = diff --patience --color
+    dfs = diff --patience --color --staged
+    ll = log --stat --abbrev-commit --color
+    lol = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset'
+    adp = add -p
+    submod = submodule
 
 [color]
-	ui = auto # covers diff = true, status = auto, branch = auto
-	interactive = auto
+    ui = auto # covers diff = true, status = auto, branch = auto
+    interactive = auto
 
 [push]
-	default = matching
+    default = matching
 [core]
-	autocrlf = input
+    autocrlf = input
