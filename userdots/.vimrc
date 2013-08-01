@@ -32,7 +32,6 @@ set nocompatible                                            " prevent vim from e
 set scrolloff=10                                            " scroll the window to always see 10 lines around the cursor
 
 " Colors
-let g:overlength_native_method = 0
 let g:solarized_termtrans=1
 let g:solarized_contrast="high"
 let g:solarized_visibility="low"
@@ -49,9 +48,15 @@ hi CursorColumn cterm=bold ctermfg=none ctermbg=none
 hi OverLength ctermbg=none ctermfg=darkred cterm=underline
 hi colorcolumn ctermbg=none ctermfg=darkred cterm=underline
 
+" Offer two ways of over-length detection (over 80th column)
+" Set 'g:overlength_native_method' to either '1' (to use colorcolumn) or '0' (custom)
+let g:overlength_native_method = 0
+
 if exists("+colorcolumn") && exists("g:overlength_native_method") && g:overlength_native_method == 1
     match
-    set colorcolumn=80
+    set colorcolumn=81
+elseif !exists("+colorcolumn")
+    match OverLength /\%>81v.\+/
 else
     set colorcolumn=0
     match OverLength /\%>81v.\+/
