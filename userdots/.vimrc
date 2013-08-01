@@ -118,7 +118,7 @@ endif
 let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
 
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-inoremap <expr><Space> pumvisible() ? neocomplcache#close_popup() : "\<Space>"
+inoremap <expr><Space> pumvisible() ? neocomplcache#close_popup()."\<Space>" : "\<Space>"
 inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
 
 augroup neocomplcache_omni
