@@ -32,3 +32,10 @@ function __my_prompt()
 
 export PS1="\$(__my_prompt \u \h \W)"
 
+# Terminal title setter
+
+function set_title()
+{
+    echo -en "\033]0;$*\a"
+}
+
