@@ -20,10 +20,11 @@ __RESET_C=$(tput sgr0)
 
 function __my_prompt()
 {
+    local gitps1="$(__git_ps1 "(%s)")"
     local fpart="${__CYAN_C}$1::$2 ${__GREEN_C}$3${__RESET_C}"
-    local gitpart="${__YELLOW_C}$(__git_ps1 "(%s)")${__RESET_C}"
+    local gitpart="${__YELLOW_C}${gitps1}${__RESET_C}"
     local lpart="${__RED_C}\$${__RESET_C} "
-    if [ "x$(__git_ps1 "(%s)")" != "x" ]; then
+    if [ "x${gitps1}" != "x" ]; then
         printf %s "${fpart} ${gitpart} ${lpart}"
     else
         printf %s "${fpart} ${lpart}"
