@@ -122,6 +122,7 @@ inoremap <expr><Space> pumvisible() ? neocomplcache#close_popup() : "\<Space>"
 inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
 
 augroup neocomplcache_omni
+    autocmd!
     autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
     autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
     autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CommpleteJS
