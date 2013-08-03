@@ -14,6 +14,7 @@ set backspace=indent,eol,start                              " sane backspace
 set spell spelllang=en_us spellfile=~/.vim/spell.add        " spell checking
 set tabstop=4 shiftwidth=4 expandtab                        " prefer 4-space tabs
 set foldmethod=indent                                       " enable indent-folding
+set nowrap                                                  " do not wrap long lines
 set dictionary+="/usr/share/dict/words"                     " add English to the vocab
 set number                                                  " show line numbers on the left
 set mousemodel=popup                                        " right-click pops up context menu
