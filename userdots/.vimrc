@@ -82,7 +82,7 @@ inoremap <F9> <esc>yyp<c-v>$r-A
 
 " Navigate splits with Tab.
 nmap <Tab> <C-W>w
-nmap <S-Tab> <C-W>w
+nmap <S-Tab> <C-W>W
 
 " Sort based on line length, shorter lines followed by longer ones
 " http://stackoverflow.com/questions/11531073/how-do-you-sort-a-range-of-lines-by-length
