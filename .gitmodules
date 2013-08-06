@@ -19,3 +19,6 @@
 [submodule "userdots/.vim/bundle/syntastic"]
 	path = userdots/.vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "userdots/.vim/bundle/tagbar"]
+	path = userdots/.vim/bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
