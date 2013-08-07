@@ -39,6 +39,21 @@ To enable CoffeeScript_ tags generation and add tagbar support you have to insta
 CoffeeTags_ by running ``gem install CoffeeTags``. You do **not** have to generate
 a TagBar configuration as that is already done in ``.vim/ftplugin/coffee.vim``.
 
+asciiio
+-------
+
+The best tool you will ever have in your terminal arsenal. asciiio_ records your
+terminal sessions and uploads them to your account. Think YouTube of the Terminal!
+
+It's already installed under ``~/bin`` but for whatever reason you needed to install
+it (i.e., upgrade to a new version) all you have to do is run::
+
+    $ curl -sL get.ascii.io | bash
+
+The bootstrap script will detect if ``~/bin`` exists and will install asciiio_ inside
+that directory.
+
 .. _CoffeeTags: https://github.com/lukaszkorecki/CoffeeTags
 .. _CoffeeScript: http://coffeescript.org
+.. _asciiio: http://ascii.io
 
