@@ -40,3 +40,6 @@ function set_title()
     echo -en "\033]0;$*\a"
 }
 
+# Add GOPATH
+export GOPATH=$HOME/bits/go
+
