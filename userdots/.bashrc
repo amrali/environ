@@ -43,3 +43,6 @@ function set_title()
 # Add GOPATH
 export GOPATH=$HOME/bits/go
 
+# Update PATH with custom paths
+export PATH=$GOPATH/bin:$PATH
+
