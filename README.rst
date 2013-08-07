@@ -32,3 +32,13 @@ fully functional Go development environment. Issue the following commands in ord
 
 That's it, now you have a ready Go development environment.
 
+CoffeeTags
+----------
+
+To enable CoffeeScript_ tags generation and add tagbar support you have to install
+CoffeeTags_ by running ``gem install CoffeeTags``. You do **not** have to generate
+a TagBar configuration as that is already done in ``.vim/ftplugin/coffee.vim``.
+
+.. _CoffeeTags: https://github.com/lukaszkorecki/CoffeeTags
+.. _CoffeeScript: http://coffeescript.org
+
