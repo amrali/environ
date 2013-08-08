@@ -28,3 +28,6 @@
 [submodule "userdots/.vim/bundle/vim-gocode"]
 	path = userdots/.vim/bundle/vim-gocode
 	url = https://github.com/Blackrush/vim-gocode.git
+[submodule "userdots/.vim/bundle/supertab"]
+	path = userdots/.vim/bundle/supertab
+	url = https://github.com/ervandew/supertab.git
