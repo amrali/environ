@@ -96,6 +96,9 @@ function! SortLines() range
     execute a:firstline . "," . a:lastline . 's/^\d\+\s//'
 endfunction
 
+" SuperTab
+let g:SuperTabDefaultCompletionType = "<C-x><C-o>"
+
 " NeoComplCache
 let g:acp_enableAtStartup = 0
 let g:neocomplcache_enable_at_startup = 1
