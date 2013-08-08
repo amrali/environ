@@ -25,3 +25,6 @@
 [submodule "userdots/.vim/bundle/vim-golang"]
 	path = userdots/.vim/bundle/vim-golang
 	url = https://github.com/jnwhiteh/vim-golang
+[submodule "userdots/.vim/bundle/vim-gocode"]
+	path = userdots/.vim/bundle/vim-gocode
+	url = https://github.com/Blackrush/vim-gocode.git
