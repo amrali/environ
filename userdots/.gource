@@ -1,0 +1,17 @@
+[display]
+viewport=1600x1080
+
+[gource]
+auto-skip-seconds=0.02
+camera-mode=track
+file-idle-time=0
+hide=progress,filenames,dirnames
+highlight-users=true
+key=true
+max-files=0
+output-framerate=30
+seconds-per-day=0.05
+stop-at-end=true
+time-scale=1.5
+user-filter=root,Root
+
