@@ -31,7 +31,7 @@ function __my_prompt()
     fi
 }
 
-export PS1="\$(__my_prompt \u \h \W)"
+export PS1="\[\$(__my_prompt \u \h \W)\]"
 
 # Terminal title setter
 
