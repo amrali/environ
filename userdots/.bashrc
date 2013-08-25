@@ -23,8 +23,6 @@ function __my_git()
     local gitps1="$(__git_ps1 "(%s)")"
     if [ "x${gitps1}" != "x" ]; then
         printf %s "${gitps1} "
-    else
-        printf %s ""
     fi
 }
 
