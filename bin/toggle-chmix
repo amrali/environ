@@ -1,0 +1,15 @@
+#!/bin/bash
+
+CONF="/tmp/pulse-mix-conf"
+
+if [ ! -f ${CONF} ]; then
+    pactl load-module module-null-sink sink_name=MixerSink >> ${CONF}
+    pactl load-module module-loopback sink=MixerSink >> ${CONF}
+    pactl load-module module-loopback sink=MixerSink >> ${CONF}
+else
+    for num in $(cat ${CONF}); do
+        pactl unload-module ${num}
+    done
+    rm -f ${CONF}
+fi
+
