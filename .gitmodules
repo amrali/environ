@@ -31,3 +31,6 @@
 [submodule "userdots/.vim/bundle/supertab"]
 	path = userdots/.vim/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
+[submodule "userdots/.vim/bundle/floobits"]
+	path = userdots/.vim/bundle/floobits
+	url = https://github.com/Floobits/floobits-vim
