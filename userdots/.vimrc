@@ -73,6 +73,7 @@ augroup END
 nnoremap <F5> :GundoToggle<CR>
 
 " Tagbar
+let g:tagbar_autofocus=1
 nnoremap <F8> :TagbarToggle<CR>
 
 " Retain the visual selection after indenting lines
