@@ -21,7 +21,7 @@ set mousemodel=popup                                        " right-click pops u
 set fileformats=unix,dos,mac                                " support all three, in this order
 set list listchars=tab:»\ ,trail:·,precedes:<,extends:>     " show tabs and trailing whitespace
 set ruler                                                   " show cursor position in status bar
-set mouse=a                                                 " enable mouse for all modes settings
+set mouse-=a                                                " enable mouse for all modes settings
 set nocursorline nocursorcolumn                             " disable both cursor line and column
 set modeline                                                " allow per-file settings via modeline
 set hidden                                                  " don't unload buffer when switching away
