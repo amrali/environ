@@ -34,3 +34,6 @@
 [submodule "userdots/.vim/bundle/floobits"]
 	path = userdots/.vim/bundle/floobits
 	url = https://github.com/Floobits/floobits-vim
+[submodule "userdots/.vim/bundle/vim-fugitive"]
+	path = userdots/.vim/bundle/vim-fugitive
+	url = git://github.com/tpope/vim-fugitive.git
