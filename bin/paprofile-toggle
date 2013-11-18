@@ -1,0 +1,31 @@
+#!/bin/bash -e
+
+. /lib/lsb/init-functions
+
+CURRENT_PROFILE=$(pacmd list-cards | grep 'active profile' | head -1 | cut -d ' ' -f 3)
+PAPROFILE0="output:analog-stereo+input:analog-stereo"
+PAPROFILE1="output:hdmi-surround+input:analog-stereo"
+
+set_card_profile()
+{
+    pacmd set-card-profile 0 ${1} 2>&1 > /dev/null
+    if [ $? -eq 0 ]; then
+        log_success_msg "Card profile set to ${1} successfully"
+    else
+        log_failure_msg "Unable to set card profile to ${1}"
+    fi
+}
+
+case "${CURRENT_PROFILE}" in
+"<${PAPROFILE0}>")
+    set_card_profile ${PAPROFILE1}
+    ;;
+"<${PAPROFILE1}>")
+    set_card_profile ${PAPROFILE0}
+    ;;
+*)
+    log_warning_msg "Current card profile is not configured"
+    set_card_profile ${PAPROFILE0}
+    ;;
+esac
+
