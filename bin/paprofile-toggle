@@ -2,13 +2,14 @@
 
 . /lib/lsb/init-functions
 
-CURRENT_PROFILE=$(pacmd list-cards | grep 'active profile' | head -1 | cut -d ' ' -f 3)
+CARD_NAME="alsa_card.pci-0000_00_1b.0"
+CURRENT_PROFILE=$(pacmd list-cards | grep -A50 "${CARD_NAME}" | grep 'active profile' | head -1 | cut -d ' ' -f 3)
 PAPROFILE0="output:analog-stereo+input:analog-stereo"
 PAPROFILE1="output:hdmi-surround+input:analog-stereo"
 
 set_card_profile()
 {
-    pacmd set-card-profile 0 ${1} 2>&1 > /dev/null
+    pacmd set-card-profile ${CARD_NAME} ${1} 2>&1 > /dev/null
     if [ $? -eq 0 ]; then
         log_success_msg "Card profile set to ${1} successfully"
     else
@@ -24,7 +25,7 @@ case "${CURRENT_PROFILE}" in
     set_card_profile ${PAPROFILE0}
     ;;
 *)
-    log_warning_msg "Current card profile is not configured"
+    log_warning_msg "Current card profile is not configured: ${CURRENT_PROFILE}"
     set_card_profile ${PAPROFILE0}
     ;;
 esac
