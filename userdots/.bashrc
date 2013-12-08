@@ -35,6 +35,9 @@ function set_title()
     echo -en "\033]0;$*\a"
 }
 
+# Set color terminal
+export TERM=xterm-256color
+
 # Add GOPATH
 export GOPATH=$HOME/bits/go
 
