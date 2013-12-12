@@ -51,7 +51,7 @@ hi colorcolumn ctermbg=none ctermfg=darkred cterm=underline
 
 " Offer two ways of over-length detection (over 80th column)
 " Set 'g:overlength_native_method' to either '1' (to use colorcolumn) or '0' (custom)
-let g:overlength_native_method = 0
+let g:overlength_native_method = 1
 
 if exists("+colorcolumn") && exists("g:overlength_native_method") && g:overlength_native_method == 1
     match
