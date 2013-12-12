@@ -37,3 +37,6 @@
 [submodule "userdots/.vim/bundle/vim-fugitive"]
 	path = userdots/.vim/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
+[submodule "userdots/.vim/bundle/vim-jade"]
+	path = userdots/.vim/bundle/vim-jade
+	url = git://github.com/digitaltoad/vim-jade.git
