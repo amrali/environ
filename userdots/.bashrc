@@ -3,9 +3,12 @@
 alias li='ls -liah'
 alias la='ls -AF'
 alias l='ls -F'
+alias g='git'
 alias eo='exo-open'
 alias vo='vim -O'
 alias sel='xsel -bi'
+alias vactive='. venv/bin/activate'
+alias vavlc='VDPAU_DRIVER=va_gl vlc'
 
 # My prompt
 GIT_PS1_SHOWDIRTYSTATE=1
