@@ -44,6 +44,12 @@ export TERM=xterm-256color
 # Add GOPATH
 export GOPATH=$HOME/bits/go
 
+# Add JAVA_HOME
+export JAVA_HOME=/usr/lib/jvm/default-java
+
+# ADT paths
+ADTPATH=/data/linux/pkgs/adt-bundle/sdk/platform-tools:/data/linux/pkgs/adt-bundle/sdk/tools
+
 # Update PATH with custom paths
-export PATH=$GOPATH/bin:$PATH
+export PATH=$GOPATH/bin:$ADTPATH:$PATH
 
