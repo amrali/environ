@@ -53,3 +53,5 @@ ADTPATH=/data/linux/pkgs/adt-bundle/sdk/platform-tools:/data/linux/pkgs/adt-bund
 # Update PATH with custom paths
 export PATH=$GOPATH/bin:$ADTPATH:$PATH
 
+### Added by the Heroku Toolbelt
+export PATH=/usr/local/heroku/bin:$PATH
