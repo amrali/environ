@@ -13,6 +13,7 @@
     dfs = diff --patience --color --staged
     pl = pull -v
     plr = pull -v --rebase
+    pu = push -v
     ll = log --stat --abbrev-commit --color
     lol = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset'
     adp = add -p
