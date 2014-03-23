@@ -50,8 +50,14 @@ export JAVA_HOME=/usr/lib/jvm/default-java
 # ADT paths
 ADTPATH=/data/linux/pkgs/adt-bundle/sdk/platform-tools:/data/linux/pkgs/adt-bundle/sdk/tools
 
+# rbenv path
+RBENVPATH=$HOME/.rbenv/bin
+
 # Update PATH with custom paths
-export PATH=$GOPATH/bin:$ADTPATH:$PATH
+export PATH=$GOPATH/bin:$ADTPATH:$RBENVPATH:$PATH
+
+# Setup rbenv
+eval "$(rbenv init -)"
 
 ### Added by the Heroku Toolbelt
 export PATH=/usr/local/heroku/bin:$PATH
