@@ -19,17 +19,24 @@
     lol = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset'
     adp = add -p
     submod = submodule
+    update-submods = submodule foreach git pull origin master
+    gen-patch = format-patch --stdout
 
 [color]
     ui = auto # covers diff = true, status = auto, branch = auto
     interactive = auto
 
 [push]
-    default = matching
+	default = matching
 [core]
     autocrlf = input
+	editor = /usr/bin/vim
 [filter "tabspace"]
 	smudge = unexpand --tabs=4 --first-only
 	clean = expand --tabs=4 --initial
 [github]
 	user = amrali
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
