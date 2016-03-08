@@ -31,9 +31,6 @@
 [submodule "userdots/.vim/bundle/supertab"]
 	path = userdots/.vim/bundle/supertab
 	url = https://github.com/ervandew/supertab.git
-[submodule "userdots/.vim/bundle/floobits"]
-	path = userdots/.vim/bundle/floobits
-	url = https://github.com/Floobits/floobits-vim
 [submodule "userdots/.vim/bundle/vim-fugitive"]
 	path = userdots/.vim/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
@@ -43,3 +40,6 @@
 [submodule "userdots/.vim/bundle/julia-vim"]
 	path = userdots/.vim/bundle/julia-vim
 	url = https://github.com/JuliaLang/julia-vim.git
+[submodule "userdots/.vim/bundle/dash.vim"]
+	path = userdots/.vim/bundle/dash.vim
+	url = https://github.com/rizzatti/dash.vim.git
