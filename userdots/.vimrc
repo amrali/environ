@@ -49,6 +49,10 @@ hi CursorColumn cterm=bold ctermfg=none ctermbg=none
 hi OverLength ctermbg=none ctermfg=darkred cterm=underline
 hi colorcolumn ctermbg=none ctermfg=darkred cterm=underline
 
+" Enable C++14 and TM for the GCC syntastic checker
+let g:syntastic_cpp_compiler = 'g++-5'
+let g:syntastic_cpp_compiler_options = " -std=c++14 -fgnu-tm"
+
 " Offer two ways of over-length detection (over 80th column)
 " Set 'g:overlength_native_method' to either '1' (to use colorcolumn) or '0' (custom)
 let g:overlength_native_method = 1
