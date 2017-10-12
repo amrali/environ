@@ -28,7 +28,7 @@ set hidden                                                  " don't unload buffe
 set nomousehide                                             " don't hide the mouse cursor while typing
 set title                                                   " make the xterm inherit the title from Vim
 set showmatch                                               " show matching parenthesis/brackets/braces
-set clipboard=unnamedplus                                   " use the system clipboard for yank/put/delete
+set clipboard^=unnamed,unnamedplus                          " use the system clipboard for yank/put/delete
 set nocompatible                                            " prevent vim from emulating vi's bugs and limitations
 set scrolloff=10                                            " scroll the window to always see 10 lines around the cursor
 
@@ -56,6 +56,9 @@ let g:syntastic_cpp_compiler_options = " -std=c++14 -fgnu-tm"
 " Offer two ways of over-length detection (over 80th column)
 " Set 'g:overlength_native_method' to either '1' (to use colorcolumn) or '0' (custom)
 let g:overlength_native_method = 1
+
+" Set Dash to work in HUD mode
+let g:dash_activate = 0
 
 if exists("+colorcolumn") && exists("g:overlength_native_method") && g:overlength_native_method == 1
     match
