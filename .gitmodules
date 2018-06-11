@@ -43,3 +43,6 @@
 [submodule "userdots/.vim/bundle/dash.vim"]
 	path = userdots/.vim/bundle/dash.vim
 	url = https://github.com/rizzatti/dash.vim.git
+[submodule "userdots/.vim/bundle/rust.vim"]
+	path = userdots/.vim/bundle/rust.vim
+	url = https://github.com/rust-lang/rust.vim.git
