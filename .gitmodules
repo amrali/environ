@@ -16,9 +16,6 @@
 [submodule "userdots/.vim/pack/bundle/start/syntastic"]
 	path = userdots/.vim/pack/bundle/start/syntastic
 	url = git://github.com/vim-syntastic/syntastic.git
-[submodule "userdots/.vim/pack/bundle/start/tagbar"]
-	path = userdots/.vim/pack/bundle/start/tagbar
-	url = git://github.com/majutsushi/tagbar.git
 [submodule "userdots/.vim/pack/bundle/start/vim-golang"]
 	path = userdots/.vim/pack/bundle/start/vim-golang
 	url = git://github.com/jnwhiteh/vim-golang.git
