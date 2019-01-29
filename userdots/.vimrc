@@ -54,7 +54,7 @@ let g:syntastic_cpp_compiler_options = " -std=c++14 -fgnu-tm"
 let g:overlength_native_method = 1
 
 " Set Dash to work in HUD mode
-let g:dash_activate = 0
+let g:dash_activate = 1
 
 if exists("+colorcolumn") && exists("g:overlength_native_method") && g:overlength_native_method == 1
     match
@@ -78,6 +78,9 @@ nnoremap <F5> :GundoToggle<CR>
 " Tagbar
 let g:tagbar_autofocus=1
 nnoremap <F8> :TagbarToggle<CR>
+
+" Add a mapping for Dash search
+nmap <silent> <leader>d <Plug>DashSearch
 
 " Retain the visual selection after indenting lines
 vnoremap > >gv
@@ -142,7 +145,7 @@ augroup END
 if !exists('g:neocomplcache_omni_patterns')
     let g:neocomplcache_omni_patterns = {}
 endif
+
 let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 let g:neocomplcache_omni_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
 let g:neocomplcache_omni_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
-
