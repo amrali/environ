@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # So we can call this from anywhere
-BASE=$(readlink -e $(dirname $0))
+BASE=$PWD
 
 # List of top dirs
 TOPDIRS=(bin etc)
@@ -10,12 +10,12 @@ TOPDIRS=(bin etc)
 git submodule update --init
 
 # Install links to all dot files and folders
-for fname in $BASE/userdots/.[A-Z]*; do
-    ln -sf `readlink -e $fname` $HOME/
+for fname in `find $BASE/userdots -iname .\* -depth 1`; do
+    ln -sf $fname $HOME/
 done
 
 # Install links for the top-dirs
 for dir in ${TOPDIRS[*]}; do
-    ln -sf `readlink -e $BASE/$dir` $HOME/
+    ln -sf $BASE/$dir $HOME/
 done
 
