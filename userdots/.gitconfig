@@ -18,6 +18,7 @@
     ll = log --stat --abbrev-commit --color
     lol = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%an>%Creset'
     adp = add -p
+    pr = pull-request
     submod = submodule
     update-submods = submodule foreach git pull origin master
     gen-patch = format-patch --stdout
@@ -36,6 +37,8 @@
 	clean = expand --tabs=4 --initial
 [github]
 	user = amrali
+[ghi]
+	token = !security find-internet-password -a amrali -s github.com -l 'ghi token' -w
 [filter "lfs"]
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
