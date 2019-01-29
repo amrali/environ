@@ -1,45 +1,45 @@
-[submodule "userdots/.vim/bundle/gundo"]
-	path = userdots/.vim/bundle/gundo
-	url = https://github.com/sjl/gundo.vim.git
-[submodule "userdots/.vim/bundle/vim-colors-solarized"]
-	path = userdots/.vim/bundle/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "userdots/.vim/bundle/vim-statline"]
-	path = userdots/.vim/bundle/vim-statline
-	url = https://github.com/millermedeiros/vim-statline.git
-[submodule "userdots/.vim/bundle/neocomplcache"]
-	path = userdots/.vim/bundle/neocomplcache
-	url = https://github.com/Shougo/neocomplcache.vim.git
-[submodule "userdots/.vim/bundle/vim-coffee-script"]
-	path = userdots/.vim/bundle/vim-coffee-script
-	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "userdots/.vim/bundle/syntastic"]
-	path = userdots/.vim/bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
-[submodule "userdots/.vim/bundle/tagbar"]
-	path = userdots/.vim/bundle/tagbar
-	url = https://github.com/majutsushi/tagbar.git
-[submodule "userdots/.vim/bundle/vim-golang"]
-	path = userdots/.vim/bundle/vim-golang
-	url = https://github.com/jnwhiteh/vim-golang
-[submodule "userdots/.vim/bundle/vim-gocode"]
-	path = userdots/.vim/bundle/vim-gocode
-	url = https://github.com/Blackrush/vim-gocode.git
-[submodule "userdots/.vim/bundle/supertab"]
-	path = userdots/.vim/bundle/supertab
-	url = https://github.com/ervandew/supertab.git
-[submodule "userdots/.vim/bundle/vim-fugitive"]
-	path = userdots/.vim/bundle/vim-fugitive
+[submodule "userdots/.vim/pack/bundle/start/gundo"]
+	path = userdots/.vim/pack/bundle/start/gundo
+	url = git://github.com/sjl/gundo.vim.git
+[submodule "userdots/.vim/pack/bundle/start/vim-colors-solarized"]
+	path = userdots/.vim/pack/bundle/start/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "userdots/.vim/pack/bundle/start/vim-statline"]
+	path = userdots/.vim/pack/bundle/start/vim-statline
+	url = git://github.com/millermedeiros/vim-statline.git
+[submodule "userdots/.vim/pack/bundle/start/neocomplcache.vim"]
+	path = userdots/.vim/pack/bundle/start/neocomplcache.vim
+	url = git://github.com/Shougo/neocomplcache.vim.git
+[submodule "userdots/.vim/pack/bundle/start/vim-coffee-script"]
+	path = userdots/.vim/pack/bundle/start/vim-coffee-script
+	url = git://github.com/kchmck/vim-coffee-script.git
+[submodule "userdots/.vim/pack/bundle/start/syntastic"]
+	path = userdots/.vim/pack/bundle/start/syntastic
+	url = git://github.com/vim-syntastic/syntastic.git
+[submodule "userdots/.vim/pack/bundle/start/tagbar"]
+	path = userdots/.vim/pack/bundle/start/tagbar
+	url = git://github.com/majutsushi/tagbar.git
+[submodule "userdots/.vim/pack/bundle/start/vim-golang"]
+	path = userdots/.vim/pack/bundle/start/vim-golang
+	url = git://github.com/jnwhiteh/vim-golang.git
+[submodule "userdots/.vim/pack/bundle/start/vim-gocode"]
+	path = userdots/.vim/pack/bundle/start/vim-gocode
+	url = git://github.com/Blackrush/vim-gocode.git
+[submodule "userdots/.vim/pack/bundle/start/supertab"]
+	path = userdots/.vim/pack/bundle/start/supertab
+	url = git://github.com/ervandew/supertab.git
+[submodule "userdots/.vim/pack/bundle/start/vim-fugitive"]
+	path = userdots/.vim/pack/bundle/start/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
-[submodule "userdots/.vim/bundle/vim-jade"]
-	path = userdots/.vim/bundle/vim-jade
-	url = git://github.com/digitaltoad/vim-jade.git
-[submodule "userdots/.vim/bundle/julia-vim"]
-	path = userdots/.vim/bundle/julia-vim
-	url = https://github.com/JuliaLang/julia-vim.git
-[submodule "userdots/.vim/bundle/dash.vim"]
-	path = userdots/.vim/bundle/dash.vim
-	url = https://github.com/rizzatti/dash.vim.git
-[submodule "userdots/.vim/bundle/rust.vim"]
-	path = userdots/.vim/bundle/rust.vim
-	url = https://github.com/rust-lang/rust.vim.git
+[submodule "userdots/.vim/pack/bundle/start/vim-jade"]
+	path = userdots/.vim/pack/bundle/start/vim-jade
+	url = git://github.com/digitaltoad/vim-pug.git
+[submodule "userdots/.vim/pack/bundle/start/julia-vim"]
+	path = userdots/.vim/pack/bundle/start/julia-vim
+	url = git://github.com/JuliaEditorSupport/julia-vim.git
+[submodule "userdots/.vim/pack/bundle/start/dash.vim"]
+	path = userdots/.vim/pack/bundle/start/dash.vim
+	url = git://github.com/rizzatti/dash.vim.git
+[submodule "userdots/.vim/pack/bundle/start/rust.vim"]
+	path = userdots/.vim/pack/bundle/start/rust.vim
+	url = git://github.com/rust-lang/rust.vim.git
