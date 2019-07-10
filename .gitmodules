@@ -40,3 +40,9 @@
 [submodule "userdots/.vim/pack/bundle/start/rust.vim"]
 	path = userdots/.vim/pack/bundle/start/rust.vim
 	url = git://github.com/rust-lang/rust.vim.git
+[submodule "userdots/.vim/pack/bundle/start/tabular"]
+	path = userdots/.vim/pack/bundle/start/tabular
+	url = git://github.com/godlygeek/tabular.git
+[submodule "userdots/.vim/pack/bundle/start/vim-terraform"]
+	path = userdots/.vim/pack/bundle/start/vim-terraform
+	url = git://github.com/hashivim/vim-terraform.git
