@@ -13,6 +13,7 @@
     df = diff --patience --color
     dfs = diff --patience --color --staged
     pl = pull -v
+    plup = pull -v upstream
     plr = pull -v --rebase
     pu = push -v
     ll = log --stat --abbrev-commit --color
@@ -28,18 +29,20 @@
     interactive = auto
 
 [push]
-	default = matching
+    default = matching
 [core]
     autocrlf = input
-	editor = /usr/bin/vim
+    editor = /usr/bin/vim
 [filter "tabspace"]
-	smudge = unexpand --tabs=4 --first-only
-	clean = expand --tabs=4 --initial
+    smudge = unexpand --tabs=4 --first-only
+    clean = expand --tabs=4 --initial
 [github]
-	user = amrali
+    user = amrali
 [ghi]
-	token = !security find-internet-password -a amrali -s github.com -l 'ghi token' -w
+    token = !security find-internet-password -a amrali -s github.com -l 'ghi token' -w
 [filter "lfs"]
-	clean = git lfs clean %f
-	smudge = git lfs smudge %f
-	required = true
+    clean = git lfs clean %f
+    smudge = git lfs smudge %f
+    required = true
+[branch]
+    autoSetupMerge = always
