@@ -45,9 +45,22 @@ hi CursorColumn cterm=bold ctermfg=none ctermbg=none
 hi OverLength ctermbg=none ctermfg=darkred cterm=underline
 hi colorcolumn ctermbg=none ctermfg=darkred cterm=underline
 
+" Map license snippets
+command GPL3 0r ~/.vim/snippets/gpl3
+
+" Allow vim-terraform to align settings automatically with Tabularize
+let g:terraform_align = 1
+
+" Allow vim-terraform to automatically format terraform files
+let g:terraform_fmt_on_save = 1
+
 " Enable C++14 and TM for the GCC syntastic checker
 let g:syntastic_cpp_compiler = 'g++-5'
 let g:syntastic_cpp_compiler_options = " -std=c++14 -fgnu-tm"
+
+" Enable mypy for Python static type checking
+let g:syntastic_python_checkers = ['python', 'mypy']
+let g:syntastic_python_mypy_args = "--allow-redefinition"
 
 " Offer two ways of over-length detection (over 80th column)
 " Set 'g:overlength_native_method' to either '1' (to use colorcolumn) or '0' (custom)
