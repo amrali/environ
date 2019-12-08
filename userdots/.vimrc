@@ -47,6 +47,7 @@ hi colorcolumn ctermbg=none ctermfg=darkred cterm=underline
 
 " Map license snippets
 command GPL3 0r ~/.vim/snippets/gpl3
+command APACHE2 0r ~/.vim/snippets/apache2
 
 " Allow vim-terraform to align settings automatically with Tabularize
 let g:terraform_align = 1
@@ -121,7 +122,7 @@ let g:SuperTabDefaultCompletionType = "<C-x><C-o>"
 
 " NeoComplCache
 let g:acp_enableAtStartup = 0
-let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_at_startup = 0
 let g:neocomplcache_max_list = 100
 let g:neocomplcache_max_keyword_width = 50
 let g:neocomplcache_auto_completion_start_length = 1
