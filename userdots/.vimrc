@@ -49,6 +49,9 @@ hi colorcolumn ctermbg=none ctermfg=darkred cterm=underline
 command GPL3 0r ~/.vim/snippets/gpl3
 command APACHE2 0r ~/.vim/snippets/apache2
 
+" Use canonical version hash for url in place of branch name
+let g:gh_use_canonical = 1
+
 " Allow vim-terraform to align settings automatically with Tabularize
 let g:terraform_align = 1
 
