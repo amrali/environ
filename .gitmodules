@@ -46,3 +46,6 @@
 [submodule "userdots/.vim/pack/bundle/start/vim-terraform"]
 	path = userdots/.vim/pack/bundle/start/vim-terraform
 	url = git://github.com/hashivim/vim-terraform.git
+[submodule "userdots/.vim/pack/bundle/start/tabnine-vim"]
+	path = userdots/.vim/pack/bundle/start/tabnine-vim
+	url = git://github.com/zxqfl/tabnine-vim.git
