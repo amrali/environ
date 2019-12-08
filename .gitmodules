@@ -49,3 +49,6 @@
 [submodule "userdots/.vim/pack/bundle/start/tabnine-vim"]
 	path = userdots/.vim/pack/bundle/start/tabnine-vim
 	url = git://github.com/zxqfl/tabnine-vim.git
+[submodule "userdots/.vim/pack/bundle/start/vim-gh-line"]
+	path = userdots/.vim/pack/bundle/start/vim-gh-line
+	url = git://github.com/ruanyl/vim-gh-line.git
