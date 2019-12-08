@@ -89,6 +89,10 @@ if [ -r $HOME/.secrets ]; then
     source $HOME/.secrets
 fi
 
+# Set locale
+export LANG=en_US.UTF-8
+export LC_ALL=$LANG
+
 # My prompt
 export PS1="${__CYAN_C}\u::\h ${__GREEN_C}\W${__RESET_C} ${__YELLOW_C}\$(__my_git)${__RESET_C}${__RED_C}\$${__RESET_C} "
 
