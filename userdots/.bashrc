@@ -16,6 +16,13 @@ CARGOPATH="$HOME/.cargo/bin"
 # Personal scripts
 PERSONALPATH="$HOME/bin"
 
+# Android Studio paths
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
 # Update PATH with custom paths
 export PATH=$PERSONALPATH:$CARGOPATH:$GOPATH/bin:$RVMPATH:$RBENVPATH:$PATH
 
@@ -83,6 +90,8 @@ alias vavlc='VDPAU_DRIVER=va_gl vlc'
 alias dcom='docker-compose'
 alias enter-hyperkit='screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty'
 alias vbox='VBoxManage'
+alias terra='terraform'
+alias docker-clean="docker ps -a | awk '{print$1}' | sed -n '1d;p' | xargs docker rm"
 
 # Load secrets
 if [ -r $HOME/.secrets ]; then

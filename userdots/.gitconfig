@@ -1,5 +1,6 @@
 [user]
     name = Amr Ali
+	email = amralicc@gmail.com
 
 [alias]
     st = status
@@ -10,6 +11,7 @@
     shs = stash save
     shp = stash pop
     shl = stash list
+    shpu = stash push
     df = diff --patience --color
     dfs = diff --patience --color --staged
     pl = pull -v
@@ -46,3 +48,5 @@
     required = true
 [branch]
     autoSetupMerge = always
+[pull]
+	rebase = false
