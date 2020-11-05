@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+package="$1"
+shift 1
+cargo run --package $package --bin $package -- "$*"
