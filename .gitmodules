@@ -1,6 +1,3 @@
-[submodule "userdots/.vim/pack/bundle/start/gundo"]
-	path = userdots/.vim/pack/bundle/start/gundo
-	url = git://github.com/sjl/gundo.vim.git
 [submodule "userdots/.vim/pack/bundle/start/vim-colors-solarized"]
 	path = userdots/.vim/pack/bundle/start/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
@@ -52,3 +49,6 @@
 [submodule "userdots/.vim/pack/bundle/start/vim-gh-line"]
 	path = userdots/.vim/pack/bundle/start/vim-gh-line
 	url = git://github.com/ruanyl/vim-gh-line.git
+[submodule "userdots/.vim/pack/bundle/start/undotree"]
+	path = userdots/.vim/pack/bundle/start/undotree
+	url = https://github.com/mbbill/undotree
