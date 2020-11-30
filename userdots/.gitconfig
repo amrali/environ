@@ -1,6 +1,6 @@
 [user]
     name = Amr Ali
-	email = amralicc@gmail.com
+    email = amralicc@gmail.com
 
 [alias]
     st = status
@@ -34,7 +34,7 @@
     default = matching
 [core]
     autocrlf = input
-    editor = /usr/bin/vim
+    editor = /usr/local/bin/vim
 [filter "tabspace"]
     smudge = unexpand --tabs=4 --first-only
     clean = expand --tabs=4 --initial
@@ -49,4 +49,4 @@
 [branch]
     autoSetupMerge = always
 [pull]
-	rebase = false
+    rebase = false
