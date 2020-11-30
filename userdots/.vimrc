@@ -89,8 +89,8 @@ augroup reload_vimrc
     autocmd BufWritePost $MYVIMRC so $MYVIMRC
 augroup END
 
-" Gundo
-nnoremap <F5> :GundoToggle<CR>
+" Undotree
+nnoremap <F5> :UndotreeToggle<CR>
 
 " Tagbar
 let g:tagbar_autofocus=1
