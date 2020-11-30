@@ -16,6 +16,9 @@ CARGOPATH="$HOME/.cargo/bin"
 # Personal scripts
 PERSONALPATH="$HOME/bin"
 
+# Homebrew sbin path
+BREW_SBIN_PATH="/usr/local/sbin"
+
 # Android Studio paths
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
@@ -24,7 +27,7 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Update PATH with custom paths
-export PATH=$PERSONALPATH:$CARGOPATH:$GOPATH/bin:$RVMPATH:$RBENVPATH:$PATH
+export PATH=$PERSONALPATH:$CARGOPATH:$GOPATH/bin:$RVMPATH:$RBENVPATH:$BREW_SBIN_PATH:$PATH
 
 # Source git prompt
 source $(brew --prefix)/etc/bash_completion.d/git-completion.bash
@@ -91,6 +94,8 @@ alias dcom='docker-compose'
 alias enter-hyperkit='screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty'
 alias vbox='VBoxManage'
 alias terra='terraform'
+alias ajrotate='aws-jumpcloud rotate'
+alias ajexport='aws-jumpcloud export'
 alias docker-clean="docker ps -a | awk '{print$1}' | sed -n '1d;p' | xargs docker rm"
 
 # Load secrets
