@@ -96,9 +96,19 @@ alias dcom='docker-compose'
 alias enter-hyperkit='screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty'
 alias vbox='VBoxManage'
 alias terra='terraform'
-alias ajrotate='aws-jumpcloud rotate'
-alias ajexport='aws-jumpcloud export'
+alias jc-ls='aws-jumpcloud list'
+alias jc-rotate='aws-jumpcloud rotate'
 alias docker-clean="docker ps -a | awk '{print$1}' | sed -n '1d;p' | xargs docker rm"
+
+# Functions
+jc-export() {
+    eval `aws-jumpcloud export "$1"`
+}
+
+jc-apply() {
+    jc-rotate "$1"; jc-export "$1"
+    #aws-jumpcloud rotate "$1"; eval `aws-jumpcloud export "$1"`
+}
 
 # Load secrets
 if [ -r $HOME/.secrets ]; then
