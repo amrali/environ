@@ -27,7 +27,7 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Update PATH with custom paths
-export PATH=$PERSONALPATH:$CARGOPATH:$GOPATH/bin:$RVMPATH:$RBENVPATH:$BREW_SBIN_PATH:$PATH
+export PATH=$PATH:$PERSONALPATH:$CARGOPATH:$GOPATH/bin:$RVMPATH:$RBENVPATH:$BREW_SBIN_PATH
 
 # Source git prompt
 source $(brew --prefix)/etc/bash_completion.d/git-completion.bash
@@ -92,7 +92,7 @@ alias vo='vim -O'
 alias sel='xsel -bi'
 alias vactive='. venv/bin/activate'
 alias vavlc='VDPAU_DRIVER=va_gl vlc'
-alias dcom='docker-compose'
+alias dcom='docker compose'
 alias enter-hyperkit='screen ~/Library/Containers/com.docker.docker/Data/vms/0/tty'
 alias vbox='VBoxManage'
 alias terra='terraform'
@@ -101,14 +101,26 @@ alias jc-rotate='aws-jumpcloud rotate'
 alias docker-clean="docker ps -a | awk '{print$1}' | sed -n '1d;p' | xargs docker rm"
 
 # Functions
+
 jc-export() {
     eval `aws-jumpcloud export "$1"`
 }
 
 jc-apply() {
     jc-rotate "$1"; jc-export "$1"
-    #aws-jumpcloud rotate "$1"; eval `aws-jumpcloud export "$1"`
 }
+
+store-secret() {
+    security add-generic-password -U -a $LOGNAME -s "$1" -w "$2"
+}
+
+load-secret() {
+    security find-generic-password -w -a $LOGNAME -s "$1"
+}
+
+#notifyDone() {
+#    terminal-notifier -title "Terminal" -message "$1. Exit status: $?" -activate com.apple.Terminal
+#}
 
 # Load secrets
 if [ -r $HOME/.secrets ]; then
@@ -133,3 +145,4 @@ eval "$(rbenv init -)"
 
 # Load GVM as a function in a shell session
 [[ -s "/home/d4de/.gvm/scripts/gvm" ]] && source "/home/d4de/.gvm/scripts/gvm"
+. "$HOME/.cargo/env"

@@ -31,10 +31,10 @@
     interactive = auto
 
 [push]
-    default = matching
+    default = simple
 [core]
     autocrlf = input
-    editor = /usr/local/bin/vim
+	editor = nvim
 [filter "tabspace"]
     smudge = unexpand --tabs=4 --first-only
     clean = expand --tabs=4 --initial
@@ -50,3 +50,5 @@
     autoSetupMerge = always
 [pull]
     rebase = false
+[credential]
+	helper = osxkeychain

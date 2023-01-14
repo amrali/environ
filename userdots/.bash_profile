@@ -21,6 +21,8 @@ fi
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-export PATH="$HOME/.cargo/bin:$PATH"
 
 gam() { "$HOME/bin/gam/gam" "$@" ; }
+. "$HOME/.cargo/env"
+
+export PATH="/Users/amr/.local/share/solana/install/active_release/bin:$PATH"
