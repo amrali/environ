@@ -1,0 +1,106 @@
+#=============================================================================
+# dark_powered.toml --- dark powered configuration example for SpaceVim
+# Copyright (c) 2016-2022 Wang Shidong & Contributors
+# Author: Wang Shidong < wsdjeg@outlook.com >
+# URL: https://spacevim.org
+# License: GPLv3
+#=============================================================================
+
+# All SpaceVim option below [option] section
+[options]
+    # set spacevim theme. by default colorscheme layer is not loaded,
+    # if you want to use more colorscheme, please load the colorscheme
+    # layer
+    colorscheme = "gruvbox"
+    colorscheme_bg = "dark"
+    # Disable guicolors in basic mode, many terminal do not support 24bit
+    # true colors
+    enable_guicolors = true
+    # Disable statusline separator, if you want to use other value, please
+    # install nerd fonts
+    statusline_separator = "arrow"
+    statusline_iseparator = "arrow"
+    buffer_index_type = 4
+    enable_tabline_filetype_icon = true
+    enable_statusline_mode = true
+    # Bootstrap functions
+    bootstrap_before = 'myspacevim#before'
+    bootstrap_after = 'myspacevim#after'
+    # Checkers layer config
+    lint_engine = 'neomake'
+    # Autocomplete config
+    autocomplete_method = 'deoplete'
+    # Project config
+    project_auto_root = false
+
+# Enable autocomplete layer
+[[layers]]
+name = 'autocomplete'
+auto_completion_return_key_behavior = "complete"
+auto_completion_tab_key_behavior = "smart"
+
+[[layers]]
+name = 'shell'
+default_position = 'top'
+default_height = 30
+
+[[layers]]
+name = 'git'
+git_plugin = 'fugitive'
+
+[[layers]]
+name = 'dockerfile'
+
+[[layers]]
+name = 'colorscheme'
+
+[[layers]]
+name = 'checkers'
+
+[[layers]]
+name = 'format'
+format_on_save = true
+
+[[layers]]
+name = 'lang#c'
+
+[[layers]]
+name = 'lang#rust'
+
+[[layers]]
+name = 'lang#swift'
+
+[[layers]]
+name = 'lang#kotlin'
+
+[[layers]]
+name = 'lang#go'
+
+[[layers]]
+name = 'lang#python'
+
+[[layers]]
+name = 'lang#sh'
+
+[[layers]]
+name = 'lang#typescript'
+
+[[layers]]
+name = 'lang#solidity'
+
+[[custom_plugins]]
+repo = 'hashivim/vim-terraform'
+merged = false
+
+[[custom_plugins]]
+repo = 'juliosueiras/vim-terraform-completion'
+merged = false
+
+[[custom_plugins]]
+repo = 'tbodt/deoplete-tabnine'
+build = "./install.sh"
+merged = false
+
+[[custom_plugins]]
+repo = 'github/copilot.vim'
+merged = false
