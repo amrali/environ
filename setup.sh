@@ -18,4 +18,3 @@ done
 for dir in ${TOPDIRS[*]}; do
     ln -sf $BASE/$dir $HOME/
 done
-
