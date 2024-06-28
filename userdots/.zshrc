@@ -77,7 +77,7 @@ zstyle ':omz:update' frequency 13
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rust zsh-autosuggestions docker command-not-found aws)
+plugins=(git rust zsh-autosuggestions docker command-not-found aws zaw)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,7 +108,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Personal plugins
-source $ZSH/plugins/zaw/zaw.zsh
+source $ZSH_CUSTOM/plugins/zaw/zaw.zsh
+source $ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # CTRL-R will pull up zaw-history (backwards zsh history search)
 bindkey '^r' zaw-history
@@ -144,9 +145,8 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$PERSONALPATH:$CARGOPATH:$GOPATH/bin:$RVMPATH:$RBENVPATH:$BREW_SBIN_PATH
 
 # Export credentials
-export `cat ~/.cloudflare/credentials`
-export `cat ~/.azure/credentials`
-export `cat ~/.datadog/credentials`
+[ -s "$HOME/.cloudflare/credentials" ] && export `cat ~/.cloudflare/credentials`
+[ -s "$HOME/.azure/credentials" ] && export `cat ~/.azure/credentials`
 
 # Aliases
 alias li='ls -liahp'
@@ -200,7 +200,7 @@ load-secret() {
 }
 
 # Setup VirtualGo
-command -v vg >/dev/null 2>&1 && eval "$(vg eval --shell bash)"
+command -v vg >/dev/null 2>&1 && eval "$(vg eval --shell zsh)"
 
 # Setup rbenv
 eval "$(rbenv init -)"
